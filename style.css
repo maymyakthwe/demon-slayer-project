@@ -3,9 +3,12 @@
     padding: 0;
 }
 
+body {
+    width: 100vw;
+}
+
 .home {
     text-align: center;
-    height: 70vh;
     background-color: #9AC5F4;
 }
 
@@ -50,8 +53,6 @@ img {
 }
 
 .scroll-down {
-    bottom: 5vh;
-    left: 50%;
     transform: scale(1.3);
     display: flex;
     justify-content: center;
@@ -139,4 +140,138 @@ img {
 #zenitsu-section {
     padding-top: 40vh;
     background: linear-gradient(to top, #f4e257, #f4e257, #f4e257, #8bc2be);
+}
+
+
+
+
+/* *** responsive *** */
+/* *** responsive *** */
+/* *** responsive *** */
+/* *** responsive *** */
+/* *** responsive *** */
+
+
+
+
+@media only screen and (max-width:1080px) {
+    .home {
+        height: max-content;
+    }
+
+    .home h1 {
+        font-size: 2.5rem;
+        padding: 1.5rem;
+    }
+
+    .home p {
+        font-size: 1.3rem;
+    }
+
+    .character-logos {
+        display: grid;
+        grid-template-columns: 50% 50%;
+
+    }
+
+    .character-logo {
+        width: 100%;
+        transition: all 0.3s ease-in-out;
+        transform: scale(0.9);
+    }
+
+    .scroll-down {
+        transform: scale(1.1);
+    }
+
+    .character-infos {
+        padding: 2rem 0;
+    }
+
+    .tanjiro-section,
+    .inoske-section,
+    .nezuko-section,
+    .zenitsu-section {
+        height: max-content;
+        width: 80%;
+        margin: auto;
+    }
+
+    .tanjiro-section .character-img,
+    .inoske-section .character-img,
+    .nezuko-section .character-img,
+    .zenitsu-section .character-img {
+        float: none;
+        width: 100%;
+        margin: auto;
+        padding: 1rem 0;
+    }
+
+    #tanjiro-section,
+    #inoske-section,
+    #nezuko-section,
+    #zenitsu-section {
+        padding-top: 10vh;
+    }
+}
+
+
+@media only screen and (max-width:450px) {
+    .home {
+        height: max-content;
+    }
+
+    .home h1 {
+        font-size: 2rem;
+        padding: 1.3rem;
+    }
+
+    .home p {
+        font-size: 1rem;
+    }
+
+    .character-logos {
+        display: grid;
+        grid-template-columns: 50% 50%;
+    }
+
+    .character-logo {
+        width: 100%;
+        transition: all 0.3s ease-in-out;
+        transform: scale(0.9);
+    }
+
+    .scroll-down {
+        transform: scale(1);
+    }
+
+    .character-infos {
+        padding: 1rem 0;
+    }
+
+    .tanjiro-section,
+    .inoske-section,
+    .nezuko-section,
+    .zenitsu-section {
+        height: max-content;
+        width: 80%;
+        margin: auto;
+    }
+
+    .tanjiro-section .character-img,
+    .inoske-section .character-img,
+    .nezuko-section .character-img,
+    .zenitsu-section .character-img {
+        float: none;
+        width: 100%;
+        margin: auto;
+        padding: 1rem 0;
+    }
+
+    #tanjiro-section,
+    #inoske-section,
+    #nezuko-section,
+    #zenitsu-section {
+        padding-top: 10vh;
+    }
 }
